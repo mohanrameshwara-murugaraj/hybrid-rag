@@ -92,6 +92,9 @@ class Retriever:
         self._by_id = {c.chunk_id: c for c in chunks}
         self._collection = load_collection(index_dir, strategy)
 
+    def get_chunk(self, chunk_id: str) -> Chunk:
+        return self._by_id[chunk_id]
+
     # --- single retrievers -------------------------------------------------
     def dense(self, query: str, k: int) -> list[Hit]:
         res = self._collection.query(

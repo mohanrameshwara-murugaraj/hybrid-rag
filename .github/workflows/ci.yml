@@ -10,6 +10,16 @@ jobs:
         with:
           python-version: "3.11"
           cache: pip
-      - run: pip install -e ".[dev]"
+      - run: pip install -e ".[dev,ui]"
       - run: ruff check . && ruff format --check .
+      # Tests use a fake embedder, a scripted LLM and a fake API client for the UI:
+      # no model downloads, no Ollama.
       - run: pytest -q
+
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker build -t hybrid-rag .
+      # Smoke test: the installed package and API import inside the image.
+      - run: docker run --rm --entrypoint python hybrid-rag -c "import hybrid_rag.api; print('ok')"

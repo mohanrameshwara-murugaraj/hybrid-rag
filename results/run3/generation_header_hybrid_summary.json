@@ -1,0 +1,86 @@
+{
+  "all": {
+    "n": 50,
+    "no_answer": {
+      "n": 10,
+      "abstention_rate": 0.9
+    },
+    "answerable": {
+      "n": 40,
+      "status": {
+        "answered": 35,
+        "partial": 0,
+        "insufficient": 5,
+        "retrieval_gate": 0
+      },
+      "abstained_with_full_evidence": 3,
+      "abstained_without_full_evidence": 2,
+      "evidence_retrieved_rate": 0.758,
+      "correct": 13,
+      "partial": 15,
+      "incorrect": 7,
+      "judge_error": 0,
+      "citation_precision": 0.833,
+      "claim_coverage": 0.871,
+      "uncited_sentences": 0,
+      "judge_missing_pairs": 0
+    },
+    "median_seconds_per_question": 4.7
+  },
+  "dev": {
+    "n": 15,
+    "no_answer": {
+      "n": 3,
+      "abstention_rate": 0.667
+    },
+    "answerable": {
+      "n": 12,
+      "status": {
+        "answered": 10,
+        "partial": 0,
+        "insufficient": 2,
+        "retrieval_gate": 0
+      },
+      "abstained_with_full_evidence": 1,
+      "abstained_without_full_evidence": 1,
+      "evidence_retrieved_rate": 0.653,
+      "correct": 0,
+      "partial": 7,
+      "incorrect": 3,
+      "judge_error": 0,
+      "citation_precision": 0.8,
+      "claim_coverage": 0.85,
+      "uncited_sentences": 0,
+      "judge_missing_pairs": 0
+    },
+    "median_seconds_per_question": 4.7
+  },
+  "heldout": {
+    "n": 35,
+    "no_answer": {
+      "n": 7,
+      "abstention_rate": 1.0
+    },
+    "answerable": {
+      "n": 28,
+      "status": {
+        "answered": 25,
+        "partial": 0,
+        "insufficient": 3,
+        "retrieval_gate": 0
+      },
+      "abstained_with_full_evidence": 2,
+      "abstained_without_full_evidence": 1,
+      "evidence_retrieved_rate": 0.804,
+      "correct": 13,
+      "partial": 8,
+      "incorrect": 4,
+      "judge_error": 0,
+      "citation_precision": 0.847,
+      "claim_coverage": 0.88,
+      "uncited_sentences": 0,
+      "judge_missing_pairs": 0
+    },
+    "median_seconds_per_question": 4.5
+  }
+}

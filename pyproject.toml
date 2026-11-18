@@ -7,10 +7,14 @@ dependencies = [
     "chromadb>=1.0",
     "rank-bm25>=0.2.2",
     "fastembed>=0.4",
+    "fastapi>=0.110",
+    "uvicorn>=0.29",
 ]
 
 [project.optional-dependencies]
-dev = ["pytest>=8", "ruff>=0.5"]
+dev = ["pytest>=8", "ruff>=0.5", "httpx>=0.27"]  # httpx: FastAPI TestClient
+figures = ["matplotlib>=3.8"]
+ui = ["streamlit>=1.67", "httpx>=0.27"]  # tested with 1.67
 
 [build-system]
 requires = ["setuptools>=68"]

@@ -1,0 +1,27 @@
+{
+  "citation": {
+    "rows": 20,
+    "n_checked": 20,
+    "unfilled": 0,
+    "agreement": 1.0,
+    "confusion_model_vs_human": {
+      "true->true": 17,
+      "false->false": 3
+    }
+  },
+  "correctness": {
+    "rows": 10,
+    "n_checked": 10,
+    "unfilled": 0,
+    "agreement": 0.7,
+    "confusion_model_vs_human": {
+      "partial->partial": 3,
+      "correct->correct": 2,
+      "incorrect->incorrect": 2,
+      "partial->correct": 2,
+      "correct->partial": 1
+    }
+  },
+  "rater": "Claude Opus (a second, stronger model) - NOT a human annotator",
+  "note": "Labels written per row before comparing with the judge's verdicts."
+}

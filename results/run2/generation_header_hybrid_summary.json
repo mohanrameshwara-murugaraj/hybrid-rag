@@ -1,0 +1,28 @@
+{
+  "n": 15,
+  "no_answer": {
+    "n": 3,
+    "abstention_rate": 1.0
+  },
+  "answerable": {
+    "n": 12,
+    "status": {
+      "answered": 5,
+      "partial": 0,
+      "insufficient": 7,
+      "retrieval_gate": 0
+    },
+    "abstained_with_full_evidence": 4,
+    "abstained_without_full_evidence": 3,
+    "evidence_retrieved_rate": 0.653,
+    "correct": 2,
+    "partial": 3,
+    "incorrect": 0,
+    "judge_error": 0,
+    "citation_precision": 0.25,
+    "claim_coverage": 0.5,
+    "uncited_sentences": 0,
+    "judge_missing_pairs": 7
+  },
+  "median_seconds_per_question": 3.6
+}

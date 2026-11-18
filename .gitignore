@@ -13,3 +13,6 @@ data/processed/
 data/index/
 results/runs/
 data/models/
+
+# macOS
+.DS_Store
