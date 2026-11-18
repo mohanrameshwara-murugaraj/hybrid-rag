@@ -1,0 +1,241 @@
+{
+  "n_questions": 4,
+  "n_answerable": 3,
+  "modes": {
+    "dense": {
+      "recall@5": 0.6666666666666666,
+      "mrr@10": 0.7037037037037037,
+      "ms_per_query": 25.656320331715204,
+      "by_type": {
+        "config_key": {
+          "n": 2,
+          "recall@5": 0.5,
+          "mrr@10": 0.5555555555555556
+        },
+        "lookup": {
+          "n": 1,
+          "recall@5": 1.0,
+          "mrr@10": 1.0
+        }
+      },
+      "per_question": [
+        {
+          "id": "ex001",
+          "type": "lookup",
+          "recall@5": 1.0,
+          "mrr@10": 1.0,
+          "top_files": [
+            "30-administration/10-configuration/30-agent.md",
+            "20-usage/25-workflows.md",
+            "30-administration/10-configuration/30-agent.md",
+            "92-development/02-core-ideas.md",
+            "92-development/09-testing.md"
+          ]
+        },
+        {
+          "id": "ex002",
+          "type": "config_key",
+          "recall@5": 1.0,
+          "mrr@10": 1.0,
+          "top_files": [
+            "30-administration/10-configuration/10-server.md",
+            "30-administration/00-general.md",
+            "30-administration/10-configuration/10-server.md",
+            "30-administration/10-configuration/10-server.md",
+            "92-development/05-architecture.md"
+          ]
+        },
+        {
+          "id": "ex003",
+          "type": "config_key",
+          "recall@5": 0.0,
+          "mrr@10": 0.1111111111111111,
+          "top_files": [
+            "30-administration/10-configuration/30-agent.md",
+            "30-administration/10-configuration/30-agent.md",
+            "30-administration/00-general.md",
+            "30-administration/10-configuration/30-agent.md",
+            "20-usage/20-workflow-syntax.md"
+          ]
+        }
+      ]
+    },
+    "sparse": {
+      "recall@5": 0.6666666666666666,
+      "mrr@10": 0.5,
+      "ms_per_query": 2.0229959991411306,
+      "by_type": {
+        "config_key": {
+          "n": 2,
+          "recall@5": 1.0,
+          "mrr@10": 0.6666666666666666
+        },
+        "lookup": {
+          "n": 1,
+          "recall@5": 0.0,
+          "mrr@10": 0.16666666666666666
+        }
+      },
+      "per_question": [
+        {
+          "id": "ex001",
+          "type": "lookup",
+          "recall@5": 0.0,
+          "mrr@10": 0.16666666666666666,
+          "top_files": [
+            "20-usage/25-workflows.md",
+            "20-usage/60-services.md",
+            "92-development/100-addons.md",
+            "30-administration/10-configuration/11-backends/30-local.md",
+            "20-usage/51-plugins/20-creating-plugins.md"
+          ]
+        },
+        {
+          "id": "ex002",
+          "type": "config_key",
+          "recall@5": 1.0,
+          "mrr@10": 1.0,
+          "top_files": [
+            "30-administration/10-configuration/10-server.md",
+            "20-usage/17-security-boundaries.md",
+            "30-administration/10-configuration/30-agent.md",
+            "20-usage/17-security-boundaries.md",
+            "92-development/07-guides.md"
+          ]
+        },
+        {
+          "id": "ex003",
+          "type": "config_key",
+          "recall@5": 1.0,
+          "mrr@10": 0.3333333333333333,
+          "top_files": [
+            "30-administration/10-configuration/30-agent.md",
+            "30-administration/10-configuration/30-agent.md",
+            "30-administration/10-configuration/40-autoscaler.md",
+            "30-administration/00-general.md",
+            "20-usage/25-workflows.md"
+          ]
+        }
+      ]
+    },
+    "hybrid": {
+      "recall@5": 1.0,
+      "mrr@10": 0.5666666666666667,
+      "ms_per_query": 9.962503332644701,
+      "by_type": {
+        "config_key": {
+          "n": 2,
+          "recall@5": 1.0,
+          "mrr@10": 0.6
+        },
+        "lookup": {
+          "n": 1,
+          "recall@5": 1.0,
+          "mrr@10": 0.5
+        }
+      },
+      "per_question": [
+        {
+          "id": "ex001",
+          "type": "lookup",
+          "recall@5": 1.0,
+          "mrr@10": 0.5,
+          "top_files": [
+            "20-usage/25-workflows.md",
+            "30-administration/10-configuration/30-agent.md",
+            "20-usage/60-services.md",
+            "30-administration/10-configuration/30-agent.md",
+            "92-development/100-addons.md"
+          ]
+        },
+        {
+          "id": "ex002",
+          "type": "config_key",
+          "recall@5": 1.0,
+          "mrr@10": 1.0,
+          "top_files": [
+            "30-administration/10-configuration/10-server.md",
+            "20-usage/17-security-boundaries.md",
+            "30-administration/00-general.md",
+            "30-administration/10-configuration/30-agent.md",
+            "30-administration/10-configuration/10-server.md"
+          ]
+        },
+        {
+          "id": "ex003",
+          "type": "config_key",
+          "recall@5": 1.0,
+          "mrr@10": 0.2,
+          "top_files": [
+            "30-administration/10-configuration/30-agent.md",
+            "30-administration/10-configuration/30-agent.md",
+            "30-administration/00-general.md",
+            "20-usage/25-workflows.md",
+            "30-administration/10-configuration/40-autoscaler.md"
+          ]
+        }
+      ]
+    },
+    "hybrid_rerank": {
+      "recall@5": 1.0,
+      "mrr@10": 0.3,
+      "ms_per_query": 827.298695333108,
+      "by_type": {
+        "config_key": {
+          "n": 2,
+          "recall@5": 1.0,
+          "mrr@10": 0.35
+        },
+        "lookup": {
+          "n": 1,
+          "recall@5": 1.0,
+          "mrr@10": 0.2
+        }
+      },
+      "per_question": [
+        {
+          "id": "ex001",
+          "type": "lookup",
+          "recall@5": 1.0,
+          "mrr@10": 0.2,
+          "top_files": [
+            "30-administration/10-configuration/11-backends/30-local.md",
+            "92-development/09-testing.md",
+            "20-usage/20-workflow-syntax.md",
+            "20-usage/20-workflow-syntax.md",
+            "30-administration/10-configuration/30-agent.md"
+          ]
+        },
+        {
+          "id": "ex002",
+          "type": "config_key",
+          "recall@5": 1.0,
+          "mrr@10": 0.5,
+          "top_files": [
+            "30-administration/00-general.md",
+            "30-administration/10-configuration/10-server.md",
+            "30-administration/10-configuration/10-server.md",
+            "92-development/07-guides.md",
+            "30-administration/10-configuration/30-agent.md"
+          ]
+        },
+        {
+          "id": "ex003",
+          "type": "config_key",
+          "recall@5": 1.0,
+          "mrr@10": 0.2,
+          "top_files": [
+            "30-administration/10-configuration/30-agent.md",
+            "30-administration/00-general.md",
+            "30-administration/10-configuration/30-agent.md",
+            "30-administration/10-configuration/30-agent.md",
+            "30-administration/10-configuration/40-autoscaler.md"
+          ]
+        }
+      ]
+    }
+  },
+  "strategy": "header",
+  "dense_weight": 0.5,
+  "golden": "data/eval/golden.example.jsonl"
+}

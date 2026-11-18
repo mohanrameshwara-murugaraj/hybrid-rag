@@ -7,7 +7,7 @@ dense-only retrieval on that corpus.
 
 ## Essential scope (MVP)
 - Markdown/text ingestion; `fixed` and `header` chunking strategies
-- Local embeddings (sentence-transformers), ChromaDB (embedded), BM25 index, kept in sync
+- Local embeddings (fastembed: quantized ONNX bge-small, no PyTorch), ChromaDB (embedded), BM25 index, kept in sync
 - Dense, sparse, weighted-RRF hybrid retrieval; cross-encoder reranker
 - Grounded generation with [n] citations and an explicit "insufficient context" path
 - Citation verification (LLM judge) flagging unsupported citations

@@ -63,7 +63,12 @@ class FastEmbedEmbedder:
         return arr.tolist()
 
     def embed_documents(self, texts: list[str]) -> list[list[float]]:
-        return self._normalize(self._model.embed(texts, batch_size=self.batch_size))
+        vecs = []
+        for i, v in enumerate(self._model.embed(texts, batch_size=self.batch_size), start=1):
+            vecs.append(v)
+            if i % 100 == 0 or i == len(texts):
+                logger.info("Embedded %d/%d chunks", i, len(texts))
+        return self._normalize(vecs)
 
     def embed_query(self, text: str) -> list[float]:
         # query_embed applies the bge query instruction prefix

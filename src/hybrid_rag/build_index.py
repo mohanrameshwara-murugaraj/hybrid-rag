@@ -20,6 +20,7 @@ def main(argv: list[str] | None = None) -> None:
     args = p.parse_args(argv)
 
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s: %(message)s")
+    logging.getLogger("httpx").setLevel(logging.WARNING)  # hide per-file download lines
     docs = load_corpus(args.corpus)
     chunks = chunk_documents(docs, args.strategy)
     manifest = build_index(chunks, FastEmbedEmbedder(args.model), args.index_dir)
